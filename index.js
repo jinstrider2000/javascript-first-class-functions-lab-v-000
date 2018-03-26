@@ -8,8 +8,8 @@ function createMultiplier(number) {
 }
 
 function createMultiplierBonus() {
-  doubler = createMultiplier;
-  tripler = createMultiplier;
+  doubler = createMultiplier(2);
+  tripler = createMultiplier(3);
 }
 
 function multiplier(value1, value2) {
