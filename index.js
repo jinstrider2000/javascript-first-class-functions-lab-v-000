@@ -7,9 +7,6 @@ function createMultiplier(number) {
   return (num) => num * number;
 }
 
-doubler = createMultiplier(2);
-tripler = createMultiplier(3);
-
 function multiplier(multiplierValue, value) {
-
+  
 }
