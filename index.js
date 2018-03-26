@@ -3,10 +3,18 @@ function countdown(callback) {
 }
 
 function createMultiplier(number) {
-  let num = number
+  let num = number;
   return (num) => num * number;
 }
 
-function multiplier(multiplierValue, value) {
-  
+function createMultiplierBonus() {
+  doubler = createMultiplier;
+  tripler = createMultiplier;
 }
+
+function multiplier(value1, value2) {
+  return value1 * value2;
+}
+
+doublerWithBind = multiplier.bind(null,2);
+triplerWithBind = multiplier.bind(null,3);
