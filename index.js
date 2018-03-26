@@ -16,5 +16,7 @@ function multiplier(value1, value2) {
   return value1 * value2;
 }
 
+createMultiplierBonus();
+
 doublerWithBind = multiplier.bind(null,2);
 triplerWithBind = multiplier.bind(null,3);
